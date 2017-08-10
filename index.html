@@ -1,28 +1,136 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Ryan Gibson, Software Developer</title>
-		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>About</h1>
-				<p>Hello, I'm Ryan, a back-end developer who loves to work with others as much as on projects. <a href="/about">Read more about my life...</a></p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:ryagibso@gmail.com">email</a></li>
-        		<li><a href="https://github.com/ryagibso">github.com/ryagibso</a></li>
-			</ul>
-		</footer>
-	</body>
+<html lang="en">
+    <head>
+        <title>Ryan Gibson | Software Developer</title>
+	    <meta charset="utf-8" />
+        <link rel="stylesheet" href="./content/font-awesome.min.css">
+        <link rel="shortcut icon" type="image/x-icon" href="/images/favicon-gg.ico" />
+        <link href="./Content/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <link rel="stylesheet" type="text/css" href="./css/animations.css">
+    </head>
+
+    <body>
+
+        <!-- NAV -->
+        <nav class="quicklinks">
+            <i class="fa fa-gg fa-3x"></i>
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <!--END NAV -->
+
+        <!--HOME -->
+        <div id="home">
+            <h1>RYAN GIBSON</h1>
+            <h2>software developer</h2>
+        </div>
+        <!--END HOME -->
+
+        <!-- ABOUT ME -->
+        <section id="about" class="background-contrast">
+            <div id="container">
+                <h1>About</h1>
+                <div class="col-md-12 col-md-offset-3">
+                    <div class="row chunk">
+                        <div class="col-md-3">
+                            <img class="round-image" src="./images/portrait.jpg" />
+                        </div>
+                        <div class="col-md-3 describe">
+                            <p>As a recent Tech Academy graduate, I am eager to join a fun, talented team and kickstart my career. I have a deep desire for anything chocolate-peanutbutter, my favorite number is 4, I'm not a huge fan of coffee, I play video games with a passion, I know what I wanted to do at the age of 14, I dabble in painball, My favorite book trilogy is The Hitchhicker's Guide to the Galaxy, and I love to problem-solve.</p>
+                        </div>
+                    </div>
+                    <br />
+                    <br /> <!--This is wonky, get rid of this later-->
+                    <br />
+                </div>
+            </div>
+        </section>
+        <!-- END ABOUT ME -->
+
+        <!-- PORTFOLIO -->
+            <div id="portfolio" class="container">
+                <br />
+                <h1>Portfolio</h1>
+                <div class="flex-container">
+
+                    <!-- WORK-CONTAINER 1 -->
+                    <div class="photo-container">
+                        <div class="photo">
+                            <img src="./images/thumbnail_1.png" alt="" />
+                            <div class="photo-overlay">
+                                <h3 class="white-head">Raffle Manager</h3>
+                                <p>Description</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END WORK-CONTAINER 1 -->
+
+                    <!-- WORK-CONTAINER 2 -->
+                    <div class="photo-container">
+                        <div class="photo">
+                            <img src="./images/thumbnail_1.png" alt="" />
+                            <div class="photo-overlay">
+                                <h3 class="white-head">Text-Based Tic-Tac-Toe</h3>
+                                <p>Description</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END WORK-CONTAINER 2 -->
+
+                    <!-- WORK-CONTAINER 3 -->
+                    <div class="photo-container">
+                        <div class="photo">
+                            <img src="./images/thumbnail_1.png" alt="" />
+                            <div class="photo-overlay">
+                                <h3 class="white-head">SQL Querries</h3>
+                                <p>Description</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END WORK-CONTAINER 3 -->
+
+                </div>
+            </div>
+        <!-- END PORTFOLIO -->
+
+        <!-- CONTACT -->
+        <section id="contact" class="background-contrast">
+            <div id="container">
+                <h1>Contact</h1>
+                <div class="col-md-12 col-md-offset-2">
+                    <div class="row chunk">
+                        <div class="col-md-4">
+                            <h3>Please feel free to reach out to me if you would like to get in touch.</h3>
+                            <div class="contactlinks">
+                                <a href="mailto:ryagibso@gmail.com" class="fa fa-envelope-square fa-4x"></a>
+                                <a href="https://www.linkedin.com/in/ryagibso/" class="fa fa-linkedin-square fa-4x"></a>
+                                <a href="https://github.com/ryagibso" class="fa fa-github-square fa-4x"></a>
+                                <a href="https://www.facebook.com/ryan.gibson.315865" class="fa fa-facebook-square fa-4x"></a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h2>Contact Information:</h2>
+                            <div class="contactlinks">
+                                <strong>Website URL<br />17435 S Sunrise Lane<br />Beavercreek, OR 97004<br />503-501-6661<br /><a href="mailto:ryagibso@gmail.com">ryagibso@gmail.com</a></strong>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <br /> <!--This is wonky, get rid of this later-->
+                    <br />
+                </div>
+            </div>
+        </section>
+        <!-- END CONTACT -->
+
+        <!-- FOOTER -->
+        <div id="footer">
+
+        </div>
+        <!-- FOOTER -->
+    <script src="./scripts/jquery-3.1.1.min.js"></script>
+    <script src="./scripts/bootstrap.min.js"></script>
+    </body>
 </html>
