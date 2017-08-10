@@ -1,0 +1,268 @@
+﻿html {
+	text-align:center;
+	color:black;
+	position:absolute;
+	width: 100%;
+}
+
+body {
+    font-family: 'proxima-nova', sans-serif;
+    font-size: 14px;
+	margin: 0;
+}
+
+nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.fa-gg {
+    position: absolute;
+    left: 20px;
+    top: 0;
+    color: rgb(214, 154, 110);
+}
+
+.quicklinks a {
+	margin: 0 15px;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	color: #fff;
+}
+
+.quicklinks a:hover{
+	text-decoration: none;
+	border-bottom: 2px solid rgb(214, 154, 110);
+}
+
+.contactlinks a {
+    color: rgb(76,75,83);
+}
+
+.contactlinks a:hover{
+    color: black;
+    text-decoration: none;
+}
+
+.contactlinks a:visited {
+    color: rgb(214, 154, 110);
+}
+
+.contactlinks a:active {
+    color: black;
+}
+
+footer,
+nav {
+  display: block;
+}
+
+.fa-envelope-square {
+    color: rgb(76,75,83);
+}
+
+.fa-linkedin-square {
+    color: rgb(76,75,83);
+}
+
+.fa-facebook-square {
+    color: rgb(76,75,83);
+}
+
+/* Styling for headers with side-dashes */
+h1 {
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+    font-weight: 100;
+    font-size: 50px;
+    overflow: hidden;
+    text-align: center;
+}
+h1:before,
+h1:after {
+    background-color: rgb(214, 154, 110);
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    vertical-align: middle;
+    width: 6%;
+}
+h1:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+h1:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+/* End styling for headers with side-dashes */
+
+h2 {
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+    font-weight: 200;
+    font-size: 25px;
+    overflow: hidden;
+    text-align: center;
+    color: rgb(214, 154, 110);
+}
+
+p {
+    font-weight: 300;
+    line-height: 30px;
+    padding-bottom: 15px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.heading-padding {
+    padding-bottom: 40px;
+}
+
+section {
+    padding-top: 30px;
+    margin-top: 50px;
+}
+
+.round-image {
+    border-radius: 50%;
+}
+
+.navbar {/*What is this?*/
+	height: 105px;
+	max-height: 340px;
+	display: block;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.clearfix:after,
+.container:after,
+.navbar:after {
+	clear: both;
+	display: table;
+	content: " ";
+}
+
+.wrap {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	/* This ensures that the images cannot 
+	   render outside of their container 
+	   without forcing any scrollbars*/
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	text-align: center;
+}
+
+.menu-container {
+	max-height: 340px;
+	margin: 0% auto;
+	content: " ";
+	/* top: 0;
+	left: 0; */
+	/* position: absolute; */ /* to the top edge of the screen */
+	width: 100%;
+	position: fixed;
+	z-index: 100;
+	/*background-color: rgba(255, 255, 255, 0.5);*/
+}
+
+/*=======================================
+  HOME SECTION STYLES
+  =======================================*/
+#home {
+	background: url(../images/test4.jpg) no-repeat 50% 50%;
+	background-attachment: fixed;
+	background-size: cover;
+	width: 100%;
+	display: block;
+	height: auto;
+	padding-top: 250px; /* This is spacer before the Main title Logo */
+	padding-bottom: 400px; /* This is spacer after the Main title Logo */
+	color: #fff;
+}
+
+/*=======================================
+  Contact STYLES
+  =======================================*/
+.flex-container {
+    display: flex;
+	flex-wrap: wrap;
+	padding: 10px;
+	border-radius: 8px;
+	margin: 0px auto;
+}
+
+.background-contrast {
+     background-color: rgb(237, 238, 239);
+}
+
+.describe {
+	margin-top:40px;
+}
+
+#about {
+    position: relative;
+    overflow: hidden;
+}
+
+#contact {
+    position:relative;
+    overflow: hidden;
+}
+
+/*=======================================
+  FOOTER STYLES
+  =======================================*/
+#footer {
+    background-color: rgb(76,75,83);
+    color: #000;
+	text-shadow: 2px 2px 8px 0 rgb(0,0,0);
+    padding: 20px 50px 20px 50px;
+    text-align: left;
+}
+
+/*=======================================
+  @MEDIA QUERIES
+  =======================================*/
+@media all and (max-width:640px) and (min-width:381px) {
+    .head-main { 
+        font-size: 28px ;
+    }
+}
+@media all and (max-width:381px) and (min-width:200px) {
+    .head-main { 
+        font-size: 24px ;
+    }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
